@@ -1,0 +1,42 @@
+{
+	"$id": "https://sandbox.proxia.ru/schemas/v02/modbus-register.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "modbus register settings",
+	"type": "object",
+
+	"required": [ "type", "address", "access", "dataType", "dataLength", "multiplier" ],
+
+	"properties": {
+
+		"type": {
+			"type": "integer",
+			"description": "composite register type [meter type] + [register id]"
+		},
+
+		"address": {
+			"type": "integer",
+			"description": "register address"
+		},
+
+		"access": {
+			"enum": ["r","w","rw"],
+			"description": "register access flag"
+		},
+
+		"dataType": {
+			"enum": [ "signed", "unsigned", "real", "long" ],
+			"description": "register data type"
+		},
+
+		"dataLength": {
+			"type": "integer",
+			"description": "amount of registers required for value"
+		},
+
+		"multiplier": {
+			"type": "string",
+			"description": "value multiplier"
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/uspd.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "abstract meter",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device.json" } ],
+
+	"required": ["imei"],
+
+	"properties": {
+
+		"cipher": {
+			"type": "string",
+			"description": "AES cipher key"
+		},
+
+		"imei": {
+			"type": "string",
+			"description": "device IMEI code"
+		},
+
+		"meters" : {
+			"type": "array",
+			"description": "connected meters",
+			"items": {
+				"$ref": "https://sandbox.proxia.ru/schemas/v02/meter.json"
+			}
+		}
+	}
+}

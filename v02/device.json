@@ -1,0 +1,30 @@
+{
+	"$id": "https://sandbox.proxia.ru/schemas/v02/device.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "generic device description",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/com-port.json" } ],
+
+	"required": [ "id", "vendor", "model" ],
+
+	"properties": {
+
+		"id": { "type": "string" },
+
+		"vendor": {
+			"type": "string",
+			"description": "vendor name"
+		},
+
+		"model" : {
+			"type": "string",
+			"description": "vendor's model name"
+		},
+
+		"serial": {
+			"type": "string",
+			"description": "serial or factory number"
+		}
+	}
+}

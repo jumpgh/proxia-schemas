@@ -1,0 +1,43 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/com-port.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "com port setting",
+	"type": "object",
+
+	"required": [  ],
+
+	"properties": {
+
+		"number": {
+            "type": "integer",
+            "description": "port number"
+      	},
+		
+		"type": {
+			"enum": [ "rs232", "rs485" ],
+			"description": "port type"
+		},
+
+		"baudrate": {
+			"type": "integer",
+			"description": "port baud rate"
+		},
+
+		"databits": {
+			"type": "integer",
+			"description": "data word length"
+		},
+
+		"stopbits": {
+			"enum": ["1","1.5","2"],
+			"description": "port stopbits"
+		},
+
+		"parity": {
+			"enum": [ "even", "odd", "none" ],
+			"description": "port stopbits"
+		}
+	}
+}

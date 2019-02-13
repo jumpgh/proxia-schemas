@@ -1,0 +1,57 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/meter-config.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "abstract meter",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device.json" } ],
+
+	"required": [],
+
+	"properties" : {
+
+		"type" : {
+			"enum" : [ "electricity", "cold water", "hot water", "gas", 
+						"heat", "modbus", "generic", "measurer", "lora" ],
+			"description": "meter type"
+		},
+
+		"outputType": {
+			"enum": [ "pulse", "digital" ],
+			"description": "meter output type"
+		},
+
+		"ropassword": {
+			"type": "string",
+			"description": "RO password"
+		},
+
+		"rwpassword": {
+			"type": "string",
+			"description": "RW password"	
+		},
+
+		"pollStatus": {
+			"enum": [ "enabled", "disabled", "maintance"],
+			"description": "poll status enabled, manually disabled, disabled for maintance"
+		},
+
+		"schedule": {
+			"type": "array",
+			"description": "poll schedule",
+			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/schedule.json" }
+		},
+
+		"registers": {
+			"type": "array",
+			"description": "modbus registers",
+			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/modbus-register-info.json" }
+		},
+
+		"archive": {
+			"$ref": "https://sandbox.proxia.ru/schemas/v02/archive-info.json",
+			"description": "archive desct "
+		}
+	}
+}

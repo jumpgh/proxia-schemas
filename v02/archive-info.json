@@ -1,0 +1,76 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/archive-info.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"definitions": {
+
+		"log": {
+			"type": "object",
+			"properties": {
+				"first": { 
+					"type": "string", 
+					"description": "дата первого (самого старшего) архива"
+				},
+				"last": { 
+					"type": "string", 
+					"description": "дата первого (самого младшего) архива" 
+				},
+				"index": {
+					"type": "integer",
+					"description": "индекс последнего считанного архива (last) из счетчика"
+				}
+			}
+		},
+
+		"logs": {
+
+			"allOf": [ { "$ref": "#/definitions/log" } ],
+
+			"type": "object",
+			"required": [],
+
+			"properties": {
+
+				"hourly": {
+					"$ref": "#/definitions/log",
+					"description": "hourly archive dates"
+				},
+
+				"daily": {
+					"$ref": "#/definitions/log",
+					"description": "daily archive dates"
+				},
+
+				"monthly": {
+					"$ref": "#/definitions/log",
+					"description": "monthly archive dates"
+				},
+
+				"yearly": {
+					"$ref": "#/definitions/log",
+					"description": "yearly archive dates"
+				}
+			}
+		}
+	},
+
+	"type": "object",
+	"description": "meter archive description, youngest & oldest measurement dates",
+	"required": [],
+	"allOf": [ {"$ref": "#/definitions/logs" } ],
+
+	"properties": {
+
+		"logInfo": {
+			"$ref": "#/definitions/logs",
+			"description": ""
+		},
+
+		"integralLogInfo": {
+			"$ref": "#/definitions/logs",
+			"description": ""
+		}
+	}
+
+}

@@ -1,0 +1,54 @@
+{
+	"$id": "https://sandbox.proxia.ru/schemas/v01/uspd.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "modbus register metadata ",
+	"type": "object",
+
+	"required": [ "id", "type"  ],
+
+	"properties": {
+
+		"id": {
+			"type": "integer",
+			"description": "USPD identifier"
+		},
+
+		"SerialNumber": {
+			"type": "string",
+			"description": "meter factory numer"
+		},
+
+		"Type": {
+			"type": "integer",
+			"description": "USPD type id "
+		},
+
+		"Cipherkey": {
+			"type": "string",
+			"description": "AES cipher key"
+		},
+
+		"IMEI": {
+			"type": "string",
+			"description": "device IMEI code"
+		},
+
+		"OLock": {
+			"type": "integer",
+			"description": "optimistic lock flag DevExp Framework proprietary data"
+		},
+
+		"GCRecord": {
+			"type": "integer",
+			"description": "internal database value (not null if meter deleted)"
+		},
+
+		"meters": {
+			"type": "array",
+			"items": {
+				"$ref": "https://sandbox.proxia.ru/schemas/v01/meter.json"
+			}
+		}
+	}
+}

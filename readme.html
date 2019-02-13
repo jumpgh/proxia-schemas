@@ -1,0 +1,90 @@
+<h3 id="текущая-схема-сообщений">Текущая схема сообщений</h3>
+<p><strong>Перечень сообщений, используемых при взаимодействии с очередью сообщений.</strong></p>
+<p><strong>LoRaWAN сервер</strong></p>
+<table>
+<thead>
+<tr>
+<th>топик</th>
+<th>отправитель</th>
+<th>получатель</th>
+<th>содержимое</th>
+<th>описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>device/out/[devaddr]</td>
+<td>LoRaWAN сервер</td>
+<td>?</td>
+<td><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/lora-message.json">lora-message.json</a></td>
+<td>message from lorawan device</td>
+</tr>
+<tr>
+<td>device/out/[devaddr]</td>
+<td>?</td>
+<td>LoRaWAN сервер</td>
+<td>?</td>
+<td>message to lorawan device</td>
+</tr>
+</tbody></table>
+<p><strong>Служба опроса</strong></p>
+<table>
+<thead>
+<tr>
+<th>топик</th>
+<th>отправитель</th>
+<th>получатель</th>
+<th>содержимое</th>
+<th>описание</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/pollservice/registration/[poll srv id]</td>
+<td>Poll Service</td>
+<td>Poll Config Service</td>
+<td><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/poll-service-registration.json">poll-service-registration.json</a></td>
+<td>Регистрация службы опроса</td>
+</tr>
+<tr>
+<td>/pollservice/[poll srv id]/object/list</td>
+<td>Poll Config Service</td>
+<td>Poll Service</td>
+<td><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/object-list.json">object-list.json</a></td>
+<td>Список подключенных устройств</td>
+</tr>
+<tr>
+<td>/device/indications/heat/archive/[device id]</td>
+<td>Poll Service</td>
+<td>?</td>
+<td><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/heat-system-message.json">heat-system-message.json</a></td>
+<td>Сообщение от службы опроса с показаниями теплосчетчика</td>
+</tr>
+</tbody></table>
+<p><strong>Список описанных типов данных</strong></p>
+<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/poll-service-registration.json">poll-service-registration.json</a> - Регистрация службы опроса</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/heat-system-message.json">heat-system-message.json</a> - Сообщение от службы опроса с показаниями теплосчетчика</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/heat-system-data.json">heat-system-data.json</a> - Показания теплосчетчика</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/meter.json">meter.json</a> - Счетчик</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/modbus-register-info.json">modbus-register-info.json</a> - </li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/object-list.json">object-list.json</a> - Список подключенных устройств</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/schedule.json">schedule.json</a> - расписание опроса</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/uspd.json">uspd.json</a> - описание УСПД</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/meter.json">meter.json</a> - описание счетчика</li>
+</ul>
+<h3 id="планируемая-схема-сообщений">Планируемая схема сообщений</h3>
+<p><strong>NB!</strong> Описание и наименования полей должны быть на английской, желательно техническом и, по возможности, интуитивно понятном. В будущем, описательные поля схемы (description) будут использоваться при создании форм ввода, подсказок и т.п. с соответствующей локализацией через словари терминов.</p>
+<p><strong>Список описанных типов данных</strong></p>
+<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/com-port.json">com-port.json</a> - настройки com порта</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/modbus-register.json">modbus-register.json</a> - настройки modbus регистра</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/device.json">device.json</a> - описание устройства общего вида (базовый типа для счетчиков и успд)</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/uspd.json">uspd.json</a> - успд</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/meter.json">meter.json</a> - счетчик общего вида (базовый типа для счетчиков)</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-meter.json">heat-meter.json</a> - теплосчетчик</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-meter.json">electricity-meter.json</a> - электросчетчик</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/extension-module.json">extension-module.json</a> - модуль расширения (пока совсем сырое)</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/schedule.json">schedule.json</a> - расписание опроса (пока совсем сырое)</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-system-data.json">heat-system-data.json</a> - данные теплосистемы </li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-system.json">heat-system.json</a> - теплосистема </li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/archive-info.json">archive-info.json</a> - описание архива счетчика</li>
+</ul>

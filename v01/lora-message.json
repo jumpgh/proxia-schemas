@@ -1,0 +1,86 @@
+{
+  
+	"$id": "https://sandbox.proxia.ru/schemas/v01/lora-message.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "message from LoRaWAN server",
+  	"type": "object",
+
+  	"required": [],
+
+  	"properties": {
+
+  		"all_gw": {  			
+  			"type": "array",  		
+  			"description": "list of gateways received packet from device",
+  			"items": {
+  				"$ref": "https://sandbox.proxia.ru/schemas/v01/lora-gateway.json"
+			}
+		},
+
+		"best_gw": {
+			"$ref": "https://sandbox.proxia.ru/schemas/v01/lora-gateway.json",
+			"description": "gateway with best lsnr/rssi"
+		},
+
+  		"app": {
+  			"type": "string",
+  			"description": "application name"
+  		},
+
+  		"appid": {
+  			"type": "string",
+  			"description": "application id"
+  		},
+
+  		"codr": {
+  			"type": "string",
+  			"description": "network coding rate"
+  		},
+
+  		"data": {
+  			"type": "string",
+  			"description": "data payload"
+  		},
+
+  		"datetime": {
+  			"type": "string",
+  			"description": "timestamp"
+  		},
+
+  		"datr": {
+  			"type": "string",
+  			"description": "datr"
+  		},
+
+  		"devaddr": {
+  			"type": "string",
+  			"description":"device address"
+  		},
+
+  		"deveui": {
+  			"type": "string",
+  			"description": "deveui"
+  		},
+
+  		"fcnt": {
+  			"type": "integer",
+  			"description": "frame counter"
+  		},
+
+  		"freq": {
+  			"type": "number",
+  			"description": "device frequency"
+  		},
+
+		"netid": {
+			"type": "string",
+			"description": "network id"
+		},
+
+		"port": {
+			"type": "integer",
+			"description": "port"
+		}
+  	}
+}

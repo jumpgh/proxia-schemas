@@ -1,0 +1,28 @@
+{
+  
+	"$id": "https://sandbox.proxia.ru/schemas/v01/lora-gateway.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "LoRaWAN gateway",
+  	"type": "object",
+
+  	"required": [],
+
+	"type": "object",  				
+		"description": "list of LoRaWAN gateway received packet from device",
+	
+	"properties": {    			
+		"lsnr": {
+			"type": "number",
+			"description": "luminance signal-to-noise ratio"
+		}, 
+		"mac": {
+			"type": "string",
+			"description": "base station MAC address"
+		},
+		"rssi": {
+			"type": "number",
+			"description": "received signal strength indication"
+		}
+	}
+}

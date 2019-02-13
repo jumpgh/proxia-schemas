@@ -1,0 +1,223 @@
+{
+
+     "$id": "https://sandbox.proxia.ru/schemas/v01/meter.json",
+     "$schema": "http://json-schema.org/draft-07/schema#",
+
+     "description": "meter metadata",
+     "type": "object",
+
+     "properties" : {
+          "Id": {
+               "type": "integer",
+               "description": "meter identifier"
+          },
+          "GCRecord": {
+               "type": "integer",
+               "description": "internal database value (not null if meter deleted)"
+          },
+          "AType": {
+               "type": "integer",
+               "description": "meter type (1 - electricity, 2 - cold water, 3 - hot water, 4 - gas, 5 - heat, 6 - generic meter, 8 - IoT device (LoRa))"
+          },
+          "BType": {
+               "type": "integer",
+               "description": "meter model name"
+          },
+          "TypeB": {
+               "type": "integer",
+               "description": "BType subtype (1 - digital meter, 2 - pulse meter)"
+          },
+          "SerialNumber": {
+               "type": "string",
+               "description": "meter factory numer"
+          },
+          "UspdId": {
+               "type": "string",
+               "description": "uspd identifier"
+          }, 
+          "NetAddress": {
+               "type": "string",
+               "description": "meter net address (on bus)"
+          },
+          "ComportNumber": {
+               "type": "integer",
+               "description": "COM port number"
+          },
+          "Request": {
+               "type": "integer",
+               "description": "request status (1 - enabled, 0 - disabled manual or disconnected, 3 - disabled for maintances )"
+          },
+          "OLock": {
+               "type": "integer",
+               "description": "optimistic lock flag DevExp Framework proprietary data"
+          },
+          "RS232Speed": {
+               "type": "integer",
+               "description": "baud rate"
+          },
+          "RS232Databits": {
+               "type": "integer",
+               "description": "data word length"
+          },
+          "RS232Stopbits": { 
+               "type": "integer",
+               "description": "amount of stopbits 1 - 1bit, 2 - 1.5bit, 3 - 2bit"
+          },
+          "ROPassword": {
+               "type": "string",
+               "description": "ro password"
+          },
+          "RWPassword": {
+               "type": "string",
+               "description": "rw password"
+          },
+          
+          "ExtModuleNetAddress": {
+               "type": "string",
+               "description": "extension module net(bus). address uspd >> extension module >> meter"
+          },
+          "ExtModuleComportNumber": {
+               "type": "integer",
+               "description": "extension module com port"   
+          },
+          "ExtModuleType": {
+               "type": "integer",
+               "description": "extension module type"   
+          },
+          "InfoVersion": {
+               "type": "string",
+               "description": "meter version obtained from meter (name + firware + version + etc)"
+          },
+          
+          "InfoCurrLogFirst": {
+               "type": "string",
+               "description": "дата первого (самого старшего) архива по текущим данным (временные срезы в БД). интегральные (итоговые) значения (по всем) "
+          },
+          "InfoCurrLogLast": {
+               "type": "string",
+               "description": "дата последнего (самого млдадшего) архива по текущим данным (временные срезы в БД)"
+          },
+          "InfoHourLogFirst": {
+               "type": "string",
+               "description": "дата первой (самой старшей) дельты по архивным данным (временные срезы в БД). транзакциооные (дельта) значения (по часам)"
+          },
+          "InfoHourLogLast": {
+               "type": "string",
+               "description": "дата последней (самой младшей) дельты по архивным данным (временные срезы в БД)"
+          },
+          "InfoDayLogFirst": {
+               "type": "string",
+               "description": "дата первой (самой старшей) дельты по архивным данным (временные срезы в БД). транзакциооные (дельта) значения (по дням)"
+          },
+          "InfoDayLogLast": {
+               "type": "string",
+               "description": "дата последней (самой младшей) дельты по архивным данным (временные срезы в БД)"               
+          },
+          "InfoMonthLogFirst": {
+               "type": "string",
+               "description": "дата первой (самой старшей) дельты по архивным данным (временные срезы в БД). транзакциооные (дельта) значения (по месяцам)"
+          },
+          "InfoMonthLogLast": {
+               "type": "string",
+               "description": "дата последней (самой младшей) дельты по архивным данным (временные срезы в БД)"                              
+          },
+          "InfoYearLogFirst": {
+               "type": "string",
+               "description": "дата первой (самой старшей) дельты по архивным данным (временные срезы в БД). транзакциооные (дельта) значения (по годам) "
+          },
+          "InfoYearLogLast": {
+               "type": "string",
+               "description": "дата последней (самой младшей) дельты по архивным данным (временные срезы в БД)"                                             
+          },
+          "InfoPowerLogFirst": {
+               "type": "string",
+               "description": "дата первого (самого старшего) архива мощности (временные срезы в БД).  профиль мощности"
+          },
+          "InfoPowerLogLast": {
+               "type": "string",
+               "description": "дата последнего (самого млдадшего) архива мощности (временные срезы в БД)"
+          },
+          "InfoPowerLogSize": {
+               "type": "string",
+               "description": "предположительно, размерность профиля мощности (кВт, МВт)"
+          },
+          "InfoHourILogFirst": {
+               "type": "string",
+               "description": "дата первого (самого старшего) архива мощности (временные срезы в БД). интегральные значения (по часам)"
+          },
+          "InfoHourILogLast": {
+               "type": "string",
+               "description": "дата последнего (самого младшего) архива мощности (временные срезы в БД)"
+          },
+          "InfoDayILogFirst": {
+               "type": "string",
+               "description": "дата первого (самого старшего) архива мощности (временные срезы в БД).  интегральные значения (по дням)"
+          },
+          "InfoDayILogLast": {
+               "type": "string",
+               "description": "дата последнего (самого младшего) архива мощности (временные срезы в БД)"               
+          },
+          "InfoMonthILogFirst": {
+               "type": "string",
+               "description": "дата первого (самого старшего) архива мощности (временные срезы в БД). интегральные значения (по месяцам)"
+          },
+          "InfoMonthILogLast": {
+               "type": "string",
+               "description": "дата последнего (самого младшего) архива мощности (временные срезы в БД)"                           
+          },
+          "InfoYearILogFirst": {
+               "type": "string",
+               "description": "дата первого (самого старшего) архива мощности (временные срезы в БД). интегральные значения (по годам)"
+          },
+          "InfoYearILogLast": {
+               "type": "string",
+               "description": "дата последнего (самого младшего) архива мощности (временные срезы в БД)"                           
+          },
+          "InfoHourLogIndex": {
+               "type": "string",
+               "description": "индекс последнего считанного архива из счетчика"
+          },
+          "InfoDayLogIndex": {
+               "type": "string",
+               "description": "индекс последнего считанного архива из счетчика"
+          },
+          "InfoMonthLogIndex": {
+               "type": "string",
+               "description": "индекс последнего считанного архива из счетчика"
+          },
+          "InfoYearLogIndex": {
+               "type": "string",
+               "description": "индекс последнего считанного архива из счетчика"
+          },
+          "InfoHourILogIndex": {
+               "type": "string",
+               "description": "индекс последнего считанного архива из счетчика"
+          },
+          "InfoDayILogIndex": {
+               "type": "string",
+               "description": "индекс последнего считанного архива из счетчика"
+          },
+          "InfoMonthILogIndex": {
+               "type": "string",
+               "description": "индекс последнего считанного архива из счетчика"
+          },
+          "InfoYearILogIndex": {
+               "type": "string",
+               "description": "индекс последнего считанного архива из счетчика"
+          },
+          "Schedules": {
+               "type": "array",
+               "items": {
+                    "$ref": "https://sandbox.proxia.ru/schemas/v01/schedule.json"
+               }
+          },
+
+          "ModbusRegisters": {
+               "type": "array",
+               "items": {
+                    "$ref": "https://sandbox.proxia.ru/schemas/v01/modbus-register-info.json"
+               }
+          }
+     }
+
+}

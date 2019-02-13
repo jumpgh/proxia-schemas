@@ -1,0 +1,49 @@
+{
+  
+	"$id": "https://sandbox.proxia.ru/schemas/v02/heat-system.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+  
+	"description": "heat system description",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/com-port.json" } ],
+  
+  	"required": [ "id", "number" ],
+  
+	"properties": {
+
+		"id": {
+			"type": "integer",
+			"description": "heating system identifier"
+		},
+
+		"number": {
+			"type": "integer",
+			"description": "heat system identifier. Meter can have multiple inputs for multiple heat systems"
+		},
+
+		"data": {
+      		"description": "heat system data",
+      		"$ref": "https://sandbox.proxia.ru/schemas/v02/heat-system-data.json"
+    	},
+
+		"time": {
+	  		"type": "string",
+	  		"description": "timestamp from meter (current measures only)"
+	  	},
+
+		"workTime": {
+			"type": "number",
+			"description": "uptime duration"
+		},
+
+		"noWorkTime": {
+			"type": "number",
+			"description": "downtime duration"
+		},
+
+		"error": {
+			"type": "string",
+			"description": "internal meter error"
+		}
+	}
+}

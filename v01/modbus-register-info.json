@@ -1,0 +1,42 @@
+{
+	"$id": "https://sandbox.proxia.ru/schemas/v01/modbus-register-info.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "modbus register metadata ",
+	"type": "object",
+
+	"required": [  ],
+
+	"properties": {
+
+		"TypeId": {
+			"type": "integer",
+			"description": "composite register type [meter type] + [register id]"
+		},
+
+		"Address": {
+			"type": "integer",
+			"description": "register address"
+		},
+
+		"RWFlag": {
+			"type": "integer",
+			"description": "register RW Flag 1 - r, 2 - w, 3 - rw"
+		},
+
+		"DataType": {
+			"type": "integer",
+			"description": "register data type 1 - int signed, 2 - int unsigned, 3 - real, 4 - long?"
+		},
+
+		"RegistersCount": {
+			"type": "integer",
+			"description": "amount of registers required for value"
+		},
+		
+		"Denominator": {
+			"type": "integer",
+			"description": "value denominator"
+		}
+	}
+}

@@ -1,0 +1,304 @@
+{
+  
+  "$id": "https://sandbox.proxia.ru/schemas/v01/heat-system-data.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  
+  "description": "heat system data payload",
+  "type": "object",
+  
+  "required": [ "heatSysId", "meterId", "heatSysNum", "serverTime" ],
+  
+  "properties": {
+
+	  "heatSysId": {
+	  	"type": "integer",
+	  	"description": "heating system identifier"
+	  },
+	  
+	  "meterId": {
+	  	"type": "integer",
+	  	"description": "meter identifier"
+	  },
+	  
+	  "heatSysNum": {
+	  	"type": "integer",
+	  	"description": "heat system identifier. Meter can have multiple inputs 4 multiple heat systems"
+	  },
+
+	  "serverTime": {
+	  	"type": "string",
+	  	"description": "message timestamp"
+	  },
+
+	  "archiveTime": {
+	  	"type": "string",
+	  	"description": "timestamp from internal meter record (archive measures only) "
+	  },
+
+	  "archiveIndex": {
+	  	"type": "number",
+	  	"description": "index from internal meter record"
+	  },
+
+	  "meterErrState": {
+	  	"type": "string",
+	  	"description": "internal meter error"
+	  },
+
+	  "meterTime": {
+	  	"type": "string",
+	  	"description": "timestamp from meter (current measures only)"
+	  },
+
+	  "workTime": {
+	  	"type": "number",
+	  	"description": "normal work duration"
+	  },
+
+	  "noWorkTime": {
+	  	"type": "number",
+	  	"description": "downtime duration"
+	  },
+
+	  "minConsumptionTime": {
+	  	"type": "number",
+	  	"description": "duration when consumption was below limits"
+	  },
+
+	  "maxConsumptionTime": {
+	  	"type": "number",
+	  	"description": "duration when consumption was above limits"
+	  },
+
+	  "minDeltaTempTime": {
+	  	"type": "number",
+	  	"description": "duration when temperature difference was below limits"
+	  },  
+
+	  "funcBlockErrType": {
+	  	"type": "number",
+	  	"description": "duration of functional block error"
+	  },  
+
+	  "powerOffTime": {
+	  	"type": "number",
+	  	"description": "duration of no auxilary power"
+	  },  
+
+	  "pollStartTime": {
+	  	"type": "string",
+	  	"description": "polling job start timestamp"
+	  },
+
+	  "pollState": {
+	  	"type": "number",
+	  	"description": "result code"  	
+	  },
+
+	  "calculated": {
+	  	"type": "boolean",
+	  	"description": "if values were obtained by interpolation"  	
+	  },
+
+
+	  "Q1": {
+	  	"type": "number",
+	  	"description": "heat energy ch#1"  	
+	  },
+
+	  "Q2": {
+	  	"type": "number",
+	  	"description": "heat energy ch#2"  	
+	  },
+
+	  "Q3": {
+	  	"type": "number",
+	  	"description": "heat energy ch#3"  	
+	  },
+
+	  "Q4": {
+	  	"type": "number",
+	  	"description": "heat energy ch#4"  	
+	  },
+
+	  "Q5": {
+	  	"type": "number",
+	  	"description": "heat energy ch#5"  	
+	  },
+
+	  "Q6": {
+	  	"type": "number",
+	  	"description": "heat energy ch#6"  	
+	  },
+
+	  "Q7": {
+	  	"type": "number",
+	  	"description": "heat energy ch#7"  	
+	  },
+
+	  "Q8": {
+	  	"type": "number",
+	  	"description": "heat energy ch#8"  	
+	  },
+
+	  "W1": {
+	  	"type": "number",
+	  	"description": "heat power ch#1"  	
+	  },
+
+	  "W2": {
+	  	"type": "number",
+	  	"description": "heat power ch#2"  	
+	  }, 
+
+	  "W3": {
+	  	"type": "number",
+	  	"description": "heat power ch#3"  	
+	  },
+
+	  "W4": {
+	  	"type": "number",
+	  	"description": "heat power ch#4"  	
+	  },
+
+	  "W5": {
+	  	"type": "number",
+	  	"description": "heat power ch#5"  	
+	  },
+
+	  "W6": {
+	  	"type": "number",
+	  	"description": "heat power ch#6"  	
+	  },
+
+	  "W7": {
+	  	"type": "number",
+	  	"description": "heat power ch#7"  	
+	  },
+
+	  "W8": {
+	  	"type": "number",
+	  	"description": "heat power ch#8"  	
+	  },
+
+	  "M1": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid mass ch#1"  	
+	  },
+
+	  "M2": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid mass ch#2"  	
+	  }, 
+
+	  "M3": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid mass ch#3"  	
+	  },
+
+	  "M4": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid mass ch#4"  	
+	  },
+	  
+	  "GM1": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid mass flow rate ch#1"  	
+	  },
+
+	  "GM2": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid mass flow rate ch#2"  	
+	  }, 
+
+	  "GM3": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid mass flow rate ch#3"  	
+	  },
+
+	  "GM4": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid mass flow rate ch#4"  	
+	  },
+
+	  "V1": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid volume ch#1"  	
+	  },
+
+	  "V2": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid volume ch#2"  	
+	  }, 
+
+	  "V3": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid volume ch#3"  	
+	  },
+
+	  "V4": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid volume ch#4"  	
+	  },
+
+	  "GV1": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid volume flow rate ch#1"  	
+	  },
+
+	  "GV2": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid volume flow rate ch#2"  	
+	  }, 
+
+	  "GV3": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid volume flow rate ch#3"  	
+	  },
+
+	  "GV4": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid volume flow rate ch#4"  	
+	  },
+
+	  "P1": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid pressure ch#1"  	
+	  },
+
+	  "P2": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid pressure ch#2"  	
+	  }, 
+
+	  "P3": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid pressure ch#3"  	
+	  },
+
+	  "P4": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid pressure ch#4"  	
+	  },
+
+	  "T1": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid temperature ch#1"  	
+	  },
+
+	  "T2": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid temperature ch#2"  	
+	  }, 
+
+	  "T3": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid temperature ch#3"  	
+	  },
+
+	  "T4": {
+	  	"type": "number",
+	  	"description": "heat transfer fluid temperature ch#4"  	
+	  }
+	}
+}

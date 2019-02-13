@@ -1,0 +1,49 @@
+{
+  
+  "$id": "https://sandbox.proxia.ru/schemas/v01/poll-service-registration.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  
+  "description": "poll service registration message",
+  "type": "object",
+  
+  "required": [ "uuid", "datetime", "meterTypes", "uspdTypes" ],
+
+  "properties": {
+
+	  "uuid": {
+	  	"type": "string",
+	  	"description": "poll service unique identifier"
+	  },
+
+	  "executionType": {
+	  	"type": "string",
+	  	"description": "poll service execution type cloud server (server) or hardware controller (unknown yet)"
+	  },
+
+	  "serverType": {
+	  	"type": "string",
+	  	"description": "message timestamp"
+	  },
+
+	  "loadCapacity": {
+	  	"type": "integer",
+	  	"description": "poll server estimated performance"
+	  },
+
+	  "meterTypes": {
+	  	"description": "supported meter codes",
+	  	"type": "array",
+	  	"items": {
+	      "type": "integer"
+	    }
+	  },
+
+	  "uspdTypes":{
+	  	"description": "supported uspd codes",
+		"type": "array",
+	  	"items": {
+	      "type": "integer"
+	    }
+	  }
+  }
+}
