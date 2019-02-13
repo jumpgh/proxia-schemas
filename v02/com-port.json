@@ -36,7 +36,7 @@
 		},
 
 		"parity": {
-			"enum": [ "even", "odd", "none" ],
+			"enum": [ "even", "odd", "none", "mark" ],
 			"description": "port stopbits"
 		}
 	}
