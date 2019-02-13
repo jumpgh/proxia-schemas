@@ -45,8 +45,8 @@
 - [com-port.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/com-port.json) - настройки com порта
 - [modbus-register.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/modbus-register.json) - настройки modbus регистра
 - [device.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/device.json) - описание устройства общего вида (базовый типа для счетчиков и успд)
-- [uspd.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/uspd.json) - успд
-- [meter.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/meter.json) - счетчик общего вида (базовый типа для счетчиков)
+- [uspd-config.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/uspd-config.json) - успд
+- [meter-config.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/meter-config.json) - счетчик общего вида (базовый типа для счетчиков)
 - [heat-meter.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-meter.json) - теплосчетчик
 - [electricity-meter.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-meter.json) - электросчетчик
 - [extension-module.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/extension-module.json) - модуль расширения (пока совсем сырое)
