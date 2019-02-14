@@ -7,7 +7,7 @@
 	"type": "object",
 	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device.json" } ],
 
-	"required": ["imei"],
+	"required": ["imei", "ip" ],
 
 	"properties": {
 
@@ -20,12 +20,25 @@
 			"type": "string",
 			"description": "device IMEI code"
 		},
+		
+		"ip": {
+			"type": "string",
+			"description": "device IP address"
+		},
 
 		"meters" : {
 			"type": "array",
 			"description": "connected meters",
 			"items": {
 				"$ref": "https://sandbox.proxia.ru/schemas/v02/meter.json"
+			}
+		},
+
+		"modules" : {
+			"type": "array",
+			"description": "connected extension modules",
+			"items": {
+				"$ref": "https://sandbox.proxia.ru/schemas/v02/extension-module.json"
 			}
 		}
 	}

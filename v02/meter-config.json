@@ -7,13 +7,13 @@
 	"type": "object",
 	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device.json" } ],
 
-	"required": [],
+	"required": [ "type", "outputType" ],
 
 	"properties" : {
 
 		"type" : {
 			"enum" : [ "electricity", "cold water", "hot water", "gas", 
-						"heat", "modbus", "generic", "measurer", "lora" ],
+						"heat", "measurer", "modbus", "lora", "generic" ],
 			"description": "meter type"
 		},
 
@@ -49,9 +49,9 @@
 			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/modbus-register-info.json" }
 		},
 
-		"archive": {
+		"archiveInfo": {
 			"$ref": "https://sandbox.proxia.ru/schemas/v02/archive-info.json",
-			"description": "archive desct "
+			"description": "info about stored archives"
 		}
 	}
 }

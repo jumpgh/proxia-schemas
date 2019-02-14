@@ -25,6 +25,12 @@
 		"serial": {
 			"type": "string",
 			"description": "serial or factory number"
+		},
+
+		"name": {
+			"type": "string",
+			"description": "heat system name"
 		}
+
 	}
 }
