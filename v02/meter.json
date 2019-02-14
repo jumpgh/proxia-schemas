@@ -1,6 +1,6 @@
 {
 
-	"$id": "https://sandbox.proxia.ru/schemas/v02/meter-config.json",
+	"$id": "https://sandbox.proxia.ru/schemas/v02/meter.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "abstract meter",
@@ -46,7 +46,7 @@
 		"registers": {
 			"type": "array",
 			"description": "modbus registers",
-			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/modbus-register-info.json" }
+			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/modbus-register.json" }
 		},
 
 		"archiveInfo": {

@@ -1,0 +1,33 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/port.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "generic port setting",
+	"type": "object",
+
+	"required": [ "type", "number", "uplink" ],
+
+	"properties": {
+
+		"type": {
+			"enum": [ "rs232", "rs485", "ethernet", "pulse", "analog", "relay" ],
+			"description": "port type"
+		},
+
+		"number": {
+			"type": "integer",
+			"description": "port number. type + number should be unique for device"
+		},
+
+		"direction": {
+			"enum": [ "input", "output", "both" ],
+			"description": "port direction"
+		},
+
+		"uplink": {
+			"type": "boolean",
+			"description": "port marked as uplink"
+		}
+	}
+}

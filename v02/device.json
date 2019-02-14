@@ -4,7 +4,6 @@
 
 	"description": "generic device description",
 	"type": "object",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/com-port.json" } ],
 
 	"required": [ "id", "vendor", "model" ],
 
@@ -30,6 +29,12 @@
 		"name": {
 			"type": "string",
 			"description": "heat system name"
+		},
+
+		"ports": {
+			"type": "array",
+			"description": "ports available",
+			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/port.json" }
 		}
 
 	}
