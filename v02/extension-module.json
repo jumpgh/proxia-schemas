@@ -11,19 +11,23 @@
 
 	"properties": {
 
+		"type": {
+			"type": "integer",
+			"description": "extension module type"
+		},
+
 		"address": {
 			"type": "string",
 			"description": "extension module net(bus) address"
 		},
 
-		"port": {
-			"type": "integer",
-			"description": "extension module com port"   
-		},
-
-		"type": {
-			"type": "integer",
-			"description": "extension module type"   
+		"meters" : {
+			"type": "array",
+			"description": "connected meters",
+			"items": {
+				"$ref": "https://sandbox.proxia.ru/schemas/v02/meter.json"
+			}
 		}
+
 	}
 }

@@ -10,23 +10,25 @@
 
 	"properties": {
 
-		"number": {
-            "type": "integer",
-            "description": "port number"
-      	},
-		
 		"type": {
 			"enum": [ "rs232", "rs485" ],
 			"description": "port type"
 		},
 
-		"baudrate": {
+		"number": {
 			"type": "integer",
+			"description": "port number"
+		},
+
+		"baudrate": {
+			"enum": ["300","600","1800","1200","2400","4800",
+						"9600","14400","19200","28800","38400",
+						"57600","76800","115200","230400"],
 			"description": "port baud rate"
 		},
 
 		"databits": {
-			"type": "integer",
+			"enum": ["5","6","7","8"],
 			"description": "data word length"
 		},
 
@@ -36,8 +38,8 @@
 		},
 
 		"parity": {
-			"enum": [ "even", "odd", "none", "mark" ],
-			"description": "port stopbits"
+			"enum": [ "none","mark","even","odd","space" ],
+			"description": "port parity"
 		}
 	}
 }
