@@ -1,0 +1,16 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/pulse-port.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "com port setting",
+	"type": "object",
+
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/port.json" } ],
+
+	"required": [  ],
+
+	"properties": {
+
+	}
+}
