@@ -1,0 +1,50 @@
+{
+  
+	"$id": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+  
+	"description": "device data record",
+	"type": "object",
+
+	"required": [],
+
+	"properties": {
+	
+		"index": {
+			"type": "number",
+			"description": "index from internal device record (archive measures only)"
+		},
+		
+		"pollState": {
+			"type": "number",
+			"description": "poll result code"
+		},
+		
+		"pollTime": {
+			"type": "string",
+			"description": "polling job start timestamp"
+		},
+
+		"recordTime": {
+			"type": "string",
+			"description": "timestamp from device (current device time or archive record time)"
+		},
+
+		"serverTime": {
+			"type": "string",
+			"description": "message timestamp"
+		},
+		
+		"error": {
+			"type": "string",
+			"description": "internal device error"
+		},
+
+		"calculated": {
+			"type": "boolean",
+			"description": "if values were obtained by interpolation"
+		}
+	
+	}
+
+}

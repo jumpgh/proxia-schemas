@@ -1,0 +1,51 @@
+{
+	"$id": "https://sandbox.proxia.ru/schemas/v02/schedule-user-data.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "poll job schedule",
+	"type": "object",
+
+	"properties": {
+
+		"period": {
+		"type": "integer",
+		"description": "poll period in seconds since start to end. If 0 poll will be called once"
+		},
+
+		"shift": {
+		"type": "integer",
+		"description": ""
+		},
+
+		"length": {
+		"type": "integer",
+		"description": "polling duration in seconds"
+		},
+
+		"start": {
+		"type": "string",
+		"description": "timestamp for single shot event"
+		},
+
+		"end": {
+		"type": "string",
+		"description": "timestamp for single shot event"
+		},
+
+		"days": {
+		"type": "string",
+		"description": "DIW,1,4 - day in week. 1 - mon, 7 - sun. 0 - every day. -1 - single shot at start"
+		},
+
+		"months": {
+		"type": "string",
+		"description": "0 - every months. 1-jan, 12-dec. -1 - single shot at start"
+		},
+
+		"years": {
+		"type": "string",
+		"description": "0 - every year, XXXX - year. -1 - single shot at start"
+		}
+
+	}
+}

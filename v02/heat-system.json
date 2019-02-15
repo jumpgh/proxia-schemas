@@ -4,7 +4,7 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "heat system description",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/port.json" } ],
+
 	"type": "object",
 
 	"required": [ "id", "number" ],

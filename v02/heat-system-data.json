@@ -5,15 +5,11 @@
   
 	"description": "heat system data",
 	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
 
 	"required": [],
 
 	"properties": {
-
-		"id": {
-			"type": "integer",
-			"description": "heating system identifier"
-		},
 
 		"Q": {
 			"type": "array",
@@ -30,13 +26,13 @@
 		"M": {
 			"type": "array",
 			"description": "heat transfer fluid mass for channel #",
-			"maxItems": 4	
+			"maxItems": 4
 		},
 
 		"GM": {
 			"type": "array",
 			"description": "heat transfer fluid mass flow rate for channel #",
-			"maxItems": 4	
+			"maxItems": 4
 		},
 
 		"V": {
@@ -62,81 +58,11 @@
 			"description": "heat transfer fluid temperature for channel #",
 			"maxItems": 4
 		},
-
-		"pollStartTime": {
-			"type": "string",
-			"description": "polling job start timestamp"
-		},
-
-		"meterTime": {
-		"type": "string",
-		"description": "timestamp from meter (current measures only)"
-		},
-
-		"serverTime": {
-		"type": "string",
-		"description": "message timestamp"
-		},
-
-		"archiveTime": {
-		"type": "string",
-		"description": "timestamp from internal meter record (archive measures only) "
-		},
-
-		"archiveIndex": {
-			"type": "number",
-			"description": "index from internal meter record (archive measures only)"
-		},
-
-		"workTime": {
-			"type": "number",
-			"description": "uptime duration"
-		},
-
-		"noWorkTime": {
-			"type": "number",
-			"description": "downtime duration"
-		},
-
-		"minConsumptionTime": {
-			"type": "number",
-			"description": "duration when consumption was below limits"
-		},
-
-		"maxConsumptionTime": {
-			"type": "number",
-			"description": "duration when consumption was above limits"
-		},
-
-		"minDeltaTempTime": {
-			"type": "number",
-			"description": "duration when temperature difference was below limits"
-		},
 		
-		"funcBlockErrTime": {
-			"type": "number",
-			"description": "duration of functional block error"
-		},
-
-		"powerOffTime": {
-			"type": "number",
-			"description": "duration of no auxilary power"
-		},
-
-		"error": {
-			"type": "string",
-			"description": "internal meter error"
-		},
-
-		"pollState": {
-			"type": "number",
-			"description": "result code"
-		},
-
-		"calculated": {
-			"type": "boolean",
-			"description": "if values were obtained by interpolation"
-		},
+		"events": {
+			"$ref": "https://sandbox.proxia.ru/schemas/v02/heat-system-events-duration.json",
+			"description": "heat system events duration"
+		}
 
 	}
 }

@@ -1,0 +1,49 @@
+{
+  
+	"$id": "https://sandbox.proxia.ru/schemas/v02/heat-system-events-duration.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+  
+	"description": "heat system events duration",
+	"type": "object",
+
+	"required": [],
+
+	"properties": {
+
+		"uptime": {
+			"type": "number",
+			"description": "uptime duration (work time)"
+		},
+
+		"downtime": {
+			"type": "number",
+			"description": "downtime duration (no work time)"
+		},
+
+		"consumptBelow": {
+			"type": "number",
+			"description": "duration when consumption was below limits"
+		},
+
+		"consumptAbove": {
+			"type": "number",
+			"description": "duration when consumption was above limits"
+		},
+
+		"temperDiffBelow": {
+			"type": "number",
+			"description": "duration when temperature difference was below limits"
+		},
+		
+		"funcError": {
+			"type": "number",
+			"description": "duration of functional block error"
+		},
+
+		"powerOff": {
+			"type": "number",
+			"description": "duration of no auxilary power"
+		}
+
+	}
+}
