@@ -1,0 +1,20 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/pulse-meter.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "pulse meter",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/meter.json" } ],
+
+	"required": [ ],
+
+	"properties" : {
+	
+		"correction": {
+			"type": "number",
+			"description" : "correction value"
+		}
+
+	}
+}
