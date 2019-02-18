@@ -1,8 +1,8 @@
 {
-  
+
 	"$id": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
-  
+
 	"description": "device data record",
 	"type": "object",
 
