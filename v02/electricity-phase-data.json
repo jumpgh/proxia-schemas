@@ -1,0 +1,39 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/electricity-phase-data.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "electricity phase data",
+	"type": "object",
+	
+	"required": [],
+
+	"properties": {
+
+		"P" : {
+			"type" : "number",
+			"description" : "power"
+		},
+		
+		"Q" : {
+			"type" : "number",
+			"description" : "reactive power (volt-ampere reactive)"
+		},
+		
+		"V" : {
+			"type" : "number",
+			"description" : "voltage"
+		},
+		
+		"I" : {
+			"type" : "number",
+			"description" : "amperage"
+		},
+		
+		"cosFi" : {
+			"type" : "number",
+			"description" : "power coefficient"
+		}
+
+	}
+}
