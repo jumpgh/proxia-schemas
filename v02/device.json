@@ -28,7 +28,7 @@
 
 		"name": {
 			"type": "string",
-			"description": "heat system name"
+			"description": "device name"
 		},
 
 		"ports": {
