@@ -1,0 +1,25 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/electricity-power-log.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "electricity power log",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
+
+	"required": [],
+
+	"properties": {
+	
+		"tariff" : {
+			"type" : "number",
+			"description" : "tariff number"
+		},
+
+		"power" : {
+			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-power-data.json",
+			"description": "power data"
+		}
+
+	}
+}

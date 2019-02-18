@@ -9,8 +9,15 @@
 	"required": [],
 
 	"properties": {
-		"data" : {
-			"type": "string"
+
+		"currentTransRatio": {
+			"type" : "number",
+			"description" : "current transformation ratio"
+		},
+
+		"voltageTransRatio" : {
+			"type" : "number",
+			"description" : "voltage transformation ratio"
 		}
 	}
 }

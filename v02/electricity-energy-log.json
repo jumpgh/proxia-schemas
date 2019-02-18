@@ -1,0 +1,59 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-log.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "electricity energy log",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
+
+	"required": [],
+
+	"properties": {
+	
+		"tariff" : {
+			"type" : "number",
+			"description" : "tariff number"
+		},
+
+		"startTime": {
+			"type": "string",
+			"description": "interval start timestamp"
+		},
+		
+		"endTime": {
+			"type": "string",
+			"description": "interval end timestamp"
+		},
+		
+		"sE" : {
+			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-data.json",
+			"description": "interval start electricity energy"
+		},
+		
+		"dE" : {
+			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-data.json",
+			"description": "difference electricity energy"
+		},
+		
+		"eE" : {
+			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-data.json",
+			"description": "interval end electricity energy"
+		},
+		
+		"cosFI" : {
+			"type" : "number",
+			"description" : "cos(fi)"
+		}, 
+		
+		"maxP" : {
+			"type" : "number",
+			"description" : "maximum power value"
+		},
+		
+		"maxPTime" : {
+			"type" : "string",
+			"description" : "maximum power value timestamp"
+		}
+	}
+}

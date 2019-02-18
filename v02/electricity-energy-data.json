@@ -1,0 +1,32 @@
+{
+	"$id": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-data.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "electricity energy data",
+	"type": "object",
+	
+	"required": [],
+
+	"properties": {
+	
+		"Ap" : {
+			"type": "number",
+			"description" : "direct active energy"
+		},
+		
+		"Am" : {
+			"type": "number",
+			"description" : "reverse active energy"
+		},
+		
+		"Rp" : {
+			"type": "number",
+			"description" : "direct reactive energy"
+		},
+		
+		"Rm" : {
+			"type": "number",
+			"description" : "reverse reactive energy"
+		}
+	}
+}
