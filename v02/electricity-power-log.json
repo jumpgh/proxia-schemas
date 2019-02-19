@@ -11,9 +11,9 @@
 
 	"properties": {
 	
-		"tariff" : {
+		"period" : {
 			"type" : "number",
-			"description" : "tariff number"
+			"description" : "averaging period in minutes"
 		},
 
 		"power" : {
