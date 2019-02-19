@@ -48,6 +48,7 @@
   * [meter.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/meter.json) - счетчик общего вида (базовый типа для счетчиков)
      * [archive-info.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/archive-info.json) - описание архива счетчика
      * [modbus-register.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/modbus-register.json) - modbus регистр
+         * [modbus-register-data.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/modbus-register-data.json) - значение modbus регистра (текущие и их срезы)
   * [pulse-meter.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/pulse-meter.json) - импульсный счетчик
      * [pulse-meter-data.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/pulse-meter-data.json) - данные импульсного счетчика (текущие и архивы)
   * [electricity-meter.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-meter.json) - электросчетчик
@@ -64,6 +65,7 @@
          * [heat-system-events-duration.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-system-events-duration.json) - структура данных продолжительности событий теплосистемы
   * [measurer.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/measurer.json) - измеритель
      * [measurer-channel.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/measurer-channel.json) - канал измерителя
+         * [measurer-channel-data.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/measurer-channel-data.json) - измеренное значение канала (текущие и их срезы)
   * [port.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/port.json) - описание порта общего вида
      * [analog-port.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/analog-port.json) - аналоговый порт
      * [com-port.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/com-port.json) - COM порт
