@@ -1,0 +1,20 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/measurer-channel-data.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "measurer channel data",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
+
+	"required": [],
+
+	"properties": {
+
+		"value" : {
+			"type" : "string",
+			"description" : "measurement target value"
+		}
+
+	}
+}

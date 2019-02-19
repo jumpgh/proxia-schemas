@@ -21,7 +21,7 @@
 			"description": "extension module net(bus) address"
 		},
 
-		"meters" : {
+		"meters": {
 			"type": "array",
 			"description": "connected meters",
 			"items": {

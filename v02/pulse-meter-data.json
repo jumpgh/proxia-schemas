@@ -1,0 +1,36 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/pulse-meter-data.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "pulse meter data",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
+
+	"required": [],
+
+	"properties": {
+
+		"pulses" : {
+			"type" : "number",
+			"description": "count of pulses registered"
+		},
+
+		"indication" : {
+			"type" : "number",
+			"description" : "measurement target value (pulses * weight)"
+		},
+		
+		"consuption" : {
+			"type" : "number",
+			"description" : "flow rate (water, gas meter) or power (electricity)"
+		},
+
+		"tariffIndication" : {
+			"type": "array",
+			"description": "trarif# indication value",
+			"maxItems": 8
+		}
+
+	}
+}
