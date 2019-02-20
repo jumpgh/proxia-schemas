@@ -75,16 +75,58 @@
 <p><strong>NB!</strong> Описание и наименования полей должны быть на английской, желательно техническом и, по возможности, интуитивно понятном. В будущем, описательные поля схемы (description) будут использоваться при создании форм ввода, подсказок и т.п. с соответствующей локализацией через словари терминов.</p>
 <p><strong>Список описанных типов данных</strong></p>
 <ul>
-<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/com-port.json">com-port.json</a> - настройки com порта</li>
-<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/modbus-register.json">modbus-register.json</a> - настройки modbus регистра</li>
-<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/device.json">device.json</a> - описание устройства общего вида (базовый типа для счетчиков и успд)</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/device.json">device.json</a> - описание устройства общего вида (базовый типа для счетчиков и успд)<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/device-data-record.json">device-data-record.json</a> - данные с устройства</li>
 <li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/uspd.json">uspd.json</a> - успд</li>
-<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/meter.json">meter.json</a> - счетчик общего вида (базовый типа для счетчиков)</li>
-<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-meter.json">heat-meter.json</a> - теплосчетчик</li>
-<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-meter.json">electricity-meter.json</a> - электросчетчик</li>
-<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/extension-module.json">extension-module.json</a> - модуль расширения (пока совсем сырое)</li>
-<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/schedule.json">schedule.json</a> - расписание опроса (пока совсем сырое)</li>
-<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-system-data.json">heat-system-data.json</a> - данные теплосистемы </li>
-<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-system.json">heat-system.json</a> - теплосистема </li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/meter.json">meter.json</a> - счетчик общего вида (базовый типа для счетчиков)<ul>
 <li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/archive-info.json">archive-info.json</a> - описание архива счетчика</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/modbus-register.json">modbus-register.json</a> - modbus регистр<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/modbus-register-data.json">modbus-register-data.json</a> - значение modbus регистра (текущие и их срезы)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/pulse-meter.json">pulse-meter.json</a> - импульсный счетчик<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/pulse-meter-data.json">pulse-meter-data.json</a> - данные импульсного счетчика (текущие и архивы)</li>
+</ul>
+</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-meter.json">electricity-meter.json</a> - электросчетчик<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-energy-data.json">electricity-energy-data.json</a> - структура данных энергии</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-power-data.json">electricity-power-data.json</a> - структура данных мощности</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-phase-data.json">electricity-phase-data.json</a> - сруктура данных 1-ой фазы</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-meter-data.json">electricity-meter-data.json</a> - данные электросчетчика (текущие и их срезы)</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-energy-log.json">electricity-energy-log.json</a> - архив данных по электроэнергии</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-power-log.json">electricity-power-log.json</a> - архив данных мощности (профиль мощности)</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/electricity-max-power-log.json">electricity-max-power-log.json</a> - архив данных максимальных мощностей в утреннее и вечернее время</li>
+</ul>
+</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-meter.json">heat-meter.json</a> - теплосчетчик<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-system.json">heat-system.json</a> - теплосистема <ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-system-data.json">heat-system-data.json</a> - данные теплосистемы (текущие и архивы)</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/heat-system-events-duration.json">heat-system-events-duration.json</a> - структура данных продолжительности событий теплосистемы</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/measurer.json">measurer.json</a> - измеритель<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/measurer-channel.json">measurer-channel.json</a> - канал измерителя<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/measurer-channel-data.json">measurer-channel-data.json</a> - измеренное значение канала (текущие и их срезы)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/port.json">port.json</a> - описание порта общего вида<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/analog-port.json">analog-port.json</a> - аналоговый порт</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/com-port.json">com-port.json</a> - COM порт</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/ethernet-port.json">ethernet-port.json</a> - ethernet</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/pulse-port.json">pulse-port.json</a> - импульсный вход/выход</li>
+</ul>
+</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/extension-module.json">extension-module.json</a> - модуль расширения</li>
+</ul>
+</li>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/schedule.json">schedule.json</a> - расписание опроса<ul>
+<li><a href="https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/schedule-user-data.json">schedule-user-data.json</a> - структура пользовательских данных расписания </li>
+</ul>
+</li>
 </ul>

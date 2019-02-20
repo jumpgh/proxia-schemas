@@ -11,6 +11,11 @@
 
 		"id": { "type": "string" },
 
+		"address": {
+			"type": "string",
+			"description": "device address details in address.md"
+		},
+
 		"vendor": {
 			"type": "string",
 			"description": "vendor name"
