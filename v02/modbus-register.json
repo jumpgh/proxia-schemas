@@ -25,7 +25,7 @@
 		},
 
 		"dataType": {
-			"enum": [ "signed", "unsigned", "real", "long" ],
+			"enum": [ "signed", "unsigned", "real" ],
 			"description": "register data type"
 		},
 
