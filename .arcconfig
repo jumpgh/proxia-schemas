@@ -1,0 +1,8 @@
+{
+    "project.name": "Proxia-Sprut",
+    "phabricator.uri": "https://ph.shpundo.com",
+    "arc.land.onto.default": "develop",
+    "base": "git:merge-base(origin/develop), arc:prompt",
+    "history.immutable": false
+}
+
