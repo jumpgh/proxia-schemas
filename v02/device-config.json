@@ -1,0 +1,22 @@
+{
+	"$id": "https://sandbox.proxia.ru/schemas/v02/device-config.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "plain list of device configuration",
+	"type": "object",
+	"required": ["devices"],
+
+	"properties": {
+
+		"patch": {
+			"enum": [ "append", "remove", "purge" ],
+			"description": "Patch type for device list. Append works as append or update device list. Purge clears all if devices list is empty, otherwise clears all children for specified devices. Remove removes specified devices and their children."
+		},
+
+		"devices": {
+			"type": "array",
+			"description": "devices available",
+			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/device.json" }
+		}
+	}
+}

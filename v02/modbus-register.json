@@ -5,14 +5,9 @@
 	"description": "modbus register settings",
 	"type": "object",
 
-	"required": [ "type", "address", "access", "dataType", "dataLength", "multiplier" ],
+	"required": [ "address", "access", "dataType", "dataLength", "multiplier", "name" ],
 
 	"properties": {
-
-		"type": {
-			"type": "integer",
-			"description": "composite register type [meter type] + [register id]"
-		},
 
 		"address": {
 			"type": "integer",
@@ -35,8 +30,18 @@
 		},
 
 		"multiplier": {
-			"type": "string",
+			"type": "number",
 			"description": "value multiplier"
+		},
+
+		"name": {
+			"type": "string",
+			"description": "register name"
+		},
+
+		"groupName": {
+			"type": "string",
+			"description": "register group name"
 		}
 	}
 }

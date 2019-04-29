@@ -13,11 +13,6 @@
 
 		"enabled": { "type":"boolean" },
 		
-		"type" : {
-			"enum": [ "Cron", "User" ],
-			"description": "type of schedule"
-		},
-
 		"user": {
 			"$ref": "https://sandbox.proxia.ru/schemas/v02/schedule-user-data.json",
 			"description": "schedule user data"

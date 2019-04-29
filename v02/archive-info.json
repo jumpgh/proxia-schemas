@@ -67,6 +67,11 @@
 		"integralLogInfo": {
 			"$ref": "#/definitions/logs",
 			"description": "information about stored integral archives"
+		},
+
+		"journalLogInfo": {
+			"$ref": "#/definitions/logs",
+			"description": "information about stored journal archives"
 		}
 	}
 

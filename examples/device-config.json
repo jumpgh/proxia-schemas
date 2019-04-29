@@ -1,0 +1,253 @@
+{
+	"patch": "append",
+	"devices": [
+		{
+			"devid": "d645f2e0-1c32-478e-9fc0-f8ce86c464ef",
+			"clientid": "20661e4e-44aa-413d-aadd-4e85b40b73fd",
+			"address": "10.100.111.125",
+			"vendor": "PROXIA",
+			"model": "UNC-GSM-OS",
+			"chipher": "AES128",
+			"ip": "10.100.111.125",
+			"serial": "947309C862A",
+			"name": "контроллер в подвале"
+		},
+		{
+			"devid": "d645f2e0-1c32-478e-9fc0-f8ce86c464ef/com/1/1",
+			"clientid": "20661e4e-44aa-413d-aadd-4e85b40b73fd",
+			"address": "d645f2e0-1c32-478e-9fc0-f8ce86c464ef/com/1/1",
+			"vendor": "НПО КАРАТ",
+			"model": "КАРАТ-307",
+			"serial": "325309C891B",
+			"name": "общедомовой теплосчетчик",
+			"schedule": [
+				{ 
+					"enabled": true, 
+					"cron": "*/10 1 * * *" 
+				},
+				{ 
+					"enabled": true, 
+					"user": {
+						"period": 600,
+						"shift": 0,
+						"lenght": 580,
+						"start": "01:00:00 01.01.2019",
+						"end": "02:00:00 01.01.2019",
+						"days": "0",
+						"months": "0",
+						"years": "0"
+					}
+				}
+			],
+			"type": "heat",
+			"outputType": "digital",
+			"ropassword": "0000",
+			"rwpassword":"1234",
+			"pollStatus": "enabled",
+			"systems": [
+				{
+					"number": 1,
+					"name": "теплоснабжение",
+					"archiveInfo": {
+						"logInfo": {
+							"hourly": {
+								"last": "2019-04-26T13:00:00+00:00",
+								"first": "2019-04-26T12:00:00+00:00",
+								"index": 1
+							},
+							"daily": {
+								"last": "2019-04-26T00:00:00+00:00",
+								"first": "2019-04-25T00:00:00+00:00",
+								"index": 1
+							}
+						},
+						"integralLogInfo": {
+							"hourly": {
+								"last": "2019-04-26T13:00:00+00:00",
+								"first": "2019-04-26T12:00:00+00:00",
+								"index": 1
+							},
+							"daily": {
+								"last": "2019-04-26T00:00:00+00:00",
+								"first": "2019-04-25T00:00:00+00:00",
+								"index": 1
+							}
+						}
+					},
+					"enabled": true
+				}
+			]
+		},
+		{
+			"devid": "d645f2e0-1c32-478e-9fc0-f8ce86c464ef/com/1/2",
+			"clientid": "20661e4e-44aa-413d-aadd-4e85b40b73fd",
+			"address": "d645f2e0-1c32-478e-9fc0-f8ce86c464ef/com/1/2",
+			"vendor": "ИНКОТЕКС",
+			"model": "МЕРКУРИЙ 230 ART-01",
+			"serial": "935609D891A",
+			"name": "общедомовой электросчетчик",
+			"schedule": [
+				{ 
+					"enabled": true, 
+					"cron": "*/10 1 * * *" 
+				},
+				{ 
+					"enabled": true, 
+					"user": {
+						"period": 600,
+						"shift": 0,
+						"lenght": 580,
+						"start": "01:00:00 01.01.2019",
+						"end": "02:00:00 01.01.2019",
+						"days": "0",
+						"months": "0",
+						"years": "0"
+					}
+				}
+			],
+			"type": "electricity",
+			"outputType": "digital",
+			"ropassword": "0000",
+			"rwpassword":"1234",
+			"pollStatus": "enabled",
+			"archiveInfo": {
+				"logInfo": {
+					"hourly": {
+						"last": "2019-04-26T13:00:00+00:00",
+						"first": "2019-04-26T12:00:00+00:00",
+						"index": 1
+					},
+					"daily": {
+						"last": "2019-04-26T00:00:00+00:00",
+						"first": "2019-04-25T00:00:00+00:00",
+						"index": 1
+					}
+				},
+				"integralLogInfo": {
+					"hourly": {
+						"last": "2019-04-26T13:00:00+00:00",
+						"first": "2019-04-26T12:00:00+00:00",
+						"index": 1
+					},
+					"daily": {
+						"last": "2019-04-26T00:00:00+00:00",
+						"first": "2019-04-25T00:00:00+00:00",
+						"index": 1
+					}
+				}
+			},
+			"currentTransRatio": 1.0,
+			"voltageTransRatio": 1.0
+		},
+		{
+			"devid": "d645f2e0-1c32-478e-9fc0-f8ce86c464ef/com/1/3",
+			"clientid": "20661e4e-44aa-413d-aadd-4e85b40b73fd",
+			"address": "d645f2e0-1c32-478e-9fc0-f8ce86c464ef/com/1/3",
+			"vendor": "PROXIA",
+			"model": "ДМ-3",
+			"serial": "100609B001B",
+			"name": "датчик многофункциональный",
+			"schedule": [
+				{ 
+					"enabled": true, 
+					"cron": "*/10 1 * * *" 
+				},
+				{ 
+					"enabled": true, 
+					"user": {
+						"period": 600,
+						"shift": 0,
+						"lenght": 580,
+						"start": "01:00:00 01.01.2019",
+						"end": "02:00:00 01.01.2019",
+						"days": "0",
+						"months": "0",
+						"years": "0"
+					}
+				}
+			],
+			"type": "modbus",
+			"outputType": "digital",
+			"ropassword": "0000",
+			"rwpassword":"1234",
+			"pollStatus": "enabled",
+			"registers": [
+				{
+					"address": 30001,
+					"access": "r",
+					"dataType": "unsigned",
+					"dataLength": 2,
+					"multiplier": 0.01,
+					"name": "температура"
+				},
+				{
+					"address": 30003,
+					"access": "r",
+					"dataType": "unsigned",
+					"dataLength": 2,
+					"multiplier": 0.01,
+					"name": "влажность"
+				},
+				{
+					"address": 30005,
+					"access": "r",
+					"dataType": "unsigned",
+					"dataLength": 2,
+					"multiplier": 0.01,
+					"name": "освещенность"
+				}
+			] 
+		},
+		{
+			"devid": "d645f2e0-1c32-478e-9fc0-f8ce86c464ef/com/1/4",
+			"clientid": "20661e4e-44aa-413d-aadd-4e85b40b73fd",
+			"address": "d645f2e0-1c32-478e-9fc0-f8ce86c464ef/com/1/4",
+			"vendor": "ОВЕН",
+			"model": "ТРМ-32",
+			"serial": "76432B001B",
+			"name": "контроллер систем отопления и ГВС",
+			"schedule": [
+				{ 
+					"enabled": true, 
+					"cron": "*/10 1 * * *" 
+				},
+				{ 
+					"enabled": true, 
+					"user": {
+						"period": 600,
+						"shift": 0,
+						"lenght": 580,
+						"start": "01:00:00 01.01.2019",
+						"end": "02:00:00 01.01.2019",
+						"days": "0",
+						"months": "0",
+						"years": "0"
+					}
+				}
+			],
+			"type": "measurer",
+			"outputType": "digital",
+			"ropassword": "0000",
+			"rwpassword":"1234",
+			"pollStatus": "enabled",
+			"channels": [
+				{
+					"number": 1,
+					"name": "вход 1 ГВС",
+					"enabled": true,
+					"multiplier": 1.0,
+					"io": "input"
+				},
+				{
+					"number": 1,
+					"name": "выход 1 ГВС",
+					"enabled": true,
+					"multiplier": 1.0,
+					"io": "output"
+				}
+			]
+		}
+
+
+	]
+}

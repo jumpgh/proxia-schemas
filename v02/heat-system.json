@@ -7,14 +7,9 @@
 
 	"type": "object",
 
-	"required": [ "id", "number" ],
+	"required": [ "number", "enabled" ],
 
 	"properties": {
-
-		"id": {
-			"type": "integer",
-			"description": "heating system identifier"
-		},
 
 		"number": {
 			"type": "integer",

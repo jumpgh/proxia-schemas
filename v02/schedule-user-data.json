@@ -5,6 +5,8 @@
 	"description": "poll job schedule",
 	"type": "object",
 
+	"required": ["period","shift","length","start","end","days","months","years"],
+
 	"properties": {
 
 		"period": {

@@ -5,15 +5,23 @@
 	"description": "generic device description",
 	"type": "object",
 
-	"required": [ "id", "vendor", "model" ],
+	"required": [ "devid", "address", "vendor", "model" ],
 
 	"properties": {
 
-		"id": { "type": "string" },
+		"devid": {
+			"type": "string" ,
+			"description": "device unique identifier"
+		},
+
+		"clientid": {
+			"type": "string" ,
+			"description": "client unique identifier"
+		},
 
 		"address": {
 			"type": "string",
-			"description": "device address details in address.md"
+			"description": "hw device address details in address.md"
 		},
 
 		"vendor": {
