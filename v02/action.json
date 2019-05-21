@@ -1,0 +1,27 @@
+{
+	"$id": "https://sandbox.proxia.ru/schemas/v02/action.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "any action",
+	"type": "object",
+	"required": ["id"],
+
+	"properties": {
+
+		"actionId": {
+			"type": "string",
+			"description": "action/request id"
+		},
+
+		"status": {
+			"enum": [ "pending", "success", "fail" ],
+			"description": "action status"
+		},
+
+		"extra": {
+			"type": "array",
+			"description": "extra info, progress, etc."
+		}
+
+	}
+}
