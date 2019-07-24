@@ -11,6 +11,11 @@
 
 	"properties": {
 
+		"address": {
+			"type": "integer",
+			"description": "logical register address"
+		},
+
 		"value" : {
 			"type" : "string",
 			"description" : "modbus register value"

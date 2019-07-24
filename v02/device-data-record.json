@@ -14,7 +14,12 @@
 			"type": "number",
 			"description": "index from internal device record (archive measures only)"
 		},
-		
+
+		"type": {
+			"enum": [ "hour", "day", "month", "year", "ihour", "iday", "imonth", "iyear", "slice", "current"  ],
+			"description": "data type (archive or operational data)"
+		},
+
 		"pollState": {
 			"type": "number",
 			"description": "poll result code"
