@@ -16,7 +16,7 @@
 		},
 
 		"type": {
-			"enum": [ "hour", "day", "month", "year", "ihour", "iday", "imonth", "iyear", "slice", "current"  ],
+			"enum": [ "current", "hour", "day", "month", "year", "ihour", "iday", "imonth", "iyear", "slice", "power", "emergency", "protected", "events"  ],
 			"description": "data type (archive or operational data)"
 		},
 
