@@ -11,7 +11,12 @@
 
 		"address": {
 			"type": "integer",
-			"description": "register address"
+			"description": "register logical address"
+		},
+
+		"type": {
+			"enum": ["holding", "input"],
+			"description": "register type"
 		},
 
 		"access": {
