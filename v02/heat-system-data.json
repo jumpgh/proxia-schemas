@@ -14,13 +14,13 @@
 		"Q": {
 			"type": "array",
 			"description": "heat energy for channel #",
-			"maxItems": 8
+			"maxItems": 11
 		},
 
 		"W": {
 			"type": "array",
 			"description": "heat power for channel #",
-			"maxItems": 8
+			"maxItems": 11
 		},
 
 		"M": {

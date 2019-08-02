@@ -12,8 +12,8 @@
 	"properties": {
 
 		"address": {
-			"type" : "string",
-			"description" : "register logical address"
+			"type": "integer",
+			"description": "logical register address"
 		},
 
 		"value" : {
