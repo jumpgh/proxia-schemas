@@ -11,17 +11,17 @@
 
 		"number": {
 			"type": "integer",
-			"description": "heat system identifier. Meter can have multiple inputs for multiple heat systems"
+			"description": "channel number. Measurer can have multiple inputs or outputs"
 		},
 
 		"name": {
 			"type": "string",
-			"description": "heat system name"
+			"description": "channel name"
 		},
 
 		"enabled": {
 			"type": "boolean",
-			"description": "is in use the system?"
+			"description": "is in use the channel?"
 		},
 		
 		"multiplier": {
@@ -32,6 +32,11 @@
 		"io": {
 			"enum": [ "input", "output" ],
 			"description": "input or output"
+		},
+
+		"archiveInfo": {
+			"$ref": "https://sandbox.proxia.ru/schemas/v02/archive-info.json",
+			"description": "info about stored archives"
 		}
 	}
 }
