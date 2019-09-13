@@ -4,13 +4,18 @@
 
 	"description": "any action",
 	"type": "object",
-	"required": ["id"],
+	"required": ["id", "actionName"],
 
 	"properties": {
 
 		"actionId": {
 			"type": "string",
 			"description": "action/request id"
+		},
+        
+        "actionName": {
+			"type": "string",
+			"description": "unique specific action name"
 		},
 
 		"status": {
