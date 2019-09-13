@@ -19,7 +19,7 @@
 		},
 
 		"status": {
-			"enum": [ "pending", "success", "fail" ],
+			"enum": [ "pending", "execution", "success", "fail" ],
 			"description": "action status"
 		},
 
