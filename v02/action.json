@@ -12,8 +12,8 @@
 			"type": "string",
 			"description": "action/request id"
 		},
-        
-        "actionName": {
+
+    "actionName": {
 			"type": "string",
 			"description": "unique specific action name"
 		},
