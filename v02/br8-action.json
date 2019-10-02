@@ -1,0 +1,17 @@
+{
+	"$id": "https://sandbox.proxia.ru/schemas/v02/action.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "any action",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/action.json" } ],
+
+	"properties": {
+
+		"command": {
+			"enum": [ "switch", "read" ],
+			"description": "data type (archive or operational data)"
+		}
+	}
+
+}

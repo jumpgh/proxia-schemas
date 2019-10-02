@@ -3,10 +3,91 @@
 	"$id": "https://sandbox.proxia.ru/schemas/v02/uspd.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
-	"description": "abstract meter",
-	"type": "object",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device.json" } ],
+	"definitions": {
 
+		"port": {
+
+			"type": "object",
+			"required": [ "type", "number", "uplink" ],
+
+			"properties": {
+				"type": {
+					"enum": [ "rs232", "rs485", "ethernet", "pulse", "analog", "relay" ],
+					"description": "port type"
+				},
+				"number": {
+					"type": "integer",
+					"description": "port number. type + number should be unique for device"
+				},
+				"uplink": {
+					"type": "boolean",
+					"description": "port marked as uplink"
+				},
+				"direction": {
+					"enum": [ "input", "output", "both" ],
+					"description": "port direction"
+				}
+			},
+			"description": "generic port setting"
+		},
+
+		"device": {
+
+			"description": "generic device description",
+			"type": "object",
+
+			"required": [ "devid", "address", "vendor", "model" ],
+
+			"properties": {
+
+				"devid": {
+					"type": "string" ,
+					"description": "device unique identifier"
+				},
+
+				"clientid": {
+					"type": "string" ,
+					"description": "client unique identifier"
+				},
+
+				"address": {
+					"type": "string",
+					"description": "hw device address details in address.md"
+				},
+
+				"vendor": {
+					"type": "string",
+					"description": "vendor name"
+				},
+
+				"model" : {
+					"type": "string",
+					"description": "vendor's model name"
+				},
+
+				"serial": {
+					"type": "string",
+					"description": "serial or factory number"
+				},
+
+				"name": {
+					"type": "string",
+					"description": "device name"
+				},
+
+				"ports": {
+					"type": "array",
+					"description": "ports available",
+					"items": { "$ref": "#/definitions/port" }
+				}
+
+			}
+		}
+	},
+
+	"description": "abstract uspd device",
+	"type": "object",
+	"allOf": [ {"$ref": "#/definitions/device" } ],
 	"required": [ ],
 
 	"properties": {
