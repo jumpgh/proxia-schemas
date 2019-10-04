@@ -37,6 +37,11 @@
 			"description": "poll status enabled, manually disabled, disabled for maintance"
 		},
 
+		"dataStorePeriod" {
+			"type": "number",
+			"description": "data store period in seconds"
+		},
+
 		"schedule": {
 			"type": "array",
 			"description": "poll schedule",
