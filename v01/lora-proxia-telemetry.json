@@ -1,0 +1,39 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v01/lora-proxia-telemetry.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "lora radio module telemetry",
+	"type": "object",
+
+	"required": [],
+
+	"properties": {
+		"lora_message": {
+			"$ref": "https://sandbox.proxia.ru/schemas/v01/lora-message.json",
+			"description": "standart message from lora server"
+		},
+
+		"time_utc": {
+			"type": "number",
+			"description": "utc time from device (current device time or archive record time)"
+		},
+
+		"temperature": {
+			"type": "number",
+			"description": "device temperature"
+		},
+
+		"battery_voltage": {
+			"type": "number",
+			"description": "battery voltage in volts"
+		},
+
+		"battery_percent": {
+			"type": "number",
+			"description": "battery level in percentage"
+		}
+
+	}
+
+}
