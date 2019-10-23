@@ -1,5 +1,5 @@
 {
-  
+
 	"$id": "https://sandbox.proxia.ru/schemas/v01/lora-message.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
@@ -10,51 +10,58 @@
 
 	"properties": {
 
-		"all_gw": {  			
-  			"type": "array",  		
-  			"description": "list of gateways received packet from device",
-  			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v01/lora-gateway.json" }
-  	},
+		"all_gw": {
+			"type": "array",
+			"description": "list of gateways received packet from device",
+			"items": {
+				"$ref": "https://sandbox.proxia.ru/schemas/v01/lora-gateway.json"
+			}
+		},
 
-  	"best_gw": {
-  		"$ref": "https://sandbox.proxia.ru/schemas/v01/lora-gateway.json",
-  		"description": "gateway with best lsnr/rssi"
-  	},
+		"best_gw": {
+			"$ref": "https://sandbox.proxia.ru/schemas/v01/lora-gateway.json",
+			"description": "gateway with best lsnr/rssi"
+		},
 
-  	"app": {
-  		"type": "string",
-  		"description": "application name"
-  	},
+		"app": {
+			"type": "string",
+			"description": "application name"
+		},
 
-  	"appeui": {
-  		"type": "string",
-  		"description": "application id"
-  	},
+		"appeui": {
+			"type": "string",
+			"description": "application id"
+		},
 
-  	"codr": {
-  		"type": "string",
-  		"description": "network coding rate"
-  	},
+		"battery": {
+			"type": "number",
+			"description": "device battery level (0-255)"
+		},
 
-  	"data": {
-  		"type": "string",
-  		"description": "data payload"
-  	},
+		"codr": {
+			"type": "string",
+			"description": "network coding rate"
+		},
 
-  	"datetime": {
-  		"type": "string",
-  		"description": "timestamp"
-  	},
+		"data": {
+			"type": "string",
+			"description": "data payload"
+		},
 
-  	"datr": {
-  		"type": "string",
-  		"description": "datr"
-  	},
+		"datetime": {
+			"type": "string",
+			"description": "timestamp from server"
+		},
 
-  	"devaddr": {
-  		"type": "string",
-  		"description":"device address"
-  	},
+		"datr": {
+			"type": "string",
+			"description": "lora datarate identifier"
+		},
+
+		"devaddr": {
+			"type": "string",
+			"description": "device address"
+		},
 
 		"deveui": {
 			"type": "string",
@@ -78,7 +85,9 @@
 
 		"port": {
 			"type": "integer",
-			"description": "port"
+			"description": "lora server port"
 		}
+
 	}
+
 }
