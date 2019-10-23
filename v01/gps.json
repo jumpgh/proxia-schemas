@@ -6,7 +6,7 @@
 	"description": "gps position data",
 	"type": "object",
 
-	"required": [lat, lon],
+	"required": ["lat", "lon"],
 
 	"properties": {
 
