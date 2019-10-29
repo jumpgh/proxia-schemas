@@ -8,8 +8,8 @@
 
 |топик|отправитель|получатель|содержимое|описание|
 |-----|-----------|----------|----------|--------|
-|device/out/[devaddr]|LoRaWAN сервер|?|[lora-message.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/lora-message.json) |message from lorawan device|
-|device/out/[devaddr]|?|LoRaWAN сервер|?|message to lorawan device|
+|data/out/[app name]/[deveui]|LoRaWAN сервер|?|[lora-message.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/lora-message.json) |message from lorawan device|
+|data/in/[app name]/[deveui]|?|LoRaWAN сервер|?|message to lorawan device|
 
 
 
@@ -34,6 +34,7 @@
  - [schedule.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/schedule.json) - расписание опроса
  - [uspd.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/uspd.json) - описание УСПД
  - [meter.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/meter.json) - описание счетчика
+ - [lora-proxia-telemetry.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v01/lora-proxia-telemetry..json) - описание телеметрии от LoRaWAN радиомодулей (записывается DataStore-ом в таблицы LORA_RM_CURR, LORA_RM_LOG)
 
 
  ### Планируемая схема сообщений
