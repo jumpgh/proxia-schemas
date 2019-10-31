@@ -5,15 +5,12 @@
 
 	"description": "lora radio module telemetry",
 	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v01/lora-message.json" } ],
 
 	"required": [],
 
 	"properties": {
-		"lora_message": {
-			"$ref": "https://sandbox.proxia.ru/schemas/v01/lora-message.json",
-			"description": "standart message from lora server"
-		},
-
+		
 		"time_utc": {
 			"type": "number",
 			"description": "utc time from device (current device time or archive record time)"
