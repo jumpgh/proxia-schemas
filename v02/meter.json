@@ -37,7 +37,7 @@
 			"description": "poll status enabled, manually disabled, disabled for maintance"
 		},
 
-		"dataStorePeriod" {
+		"dataStorePeriod": {
 			"type": "number",
 			"description": "data store period in seconds"
 		},
