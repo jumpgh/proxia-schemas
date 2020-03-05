@@ -1,0 +1,61 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/uspd-telemetry.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "device telemetry",
+	"type": "object",
+	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
+
+	"required": [],
+
+	"properties": {
+	
+		"uptime" : {
+			"type" : "number",
+			"description" : "uptime in seconds"
+		},
+
+		"supplyVoltage" : {
+			"type" : "number",
+			"description" : "supply voltage"
+		},
+
+		"cpuTemperature" : {
+			"type" : "number",
+			"description" : "cpu temperature"
+		},
+
+		"gsm" : {
+			"$ref": "https://sandbox.proxia.ru/schemas/v02/gsm-state-data.json",
+			"description": "gsm state"
+		},
+
+		"comportType" : {
+			"type": "array",
+			"description": "comport type",
+			"maxItems": 3
+		},
+
+		"lineState" : {
+			"type": "array",
+			"description": "loop status",
+			"maxItems": 3
+		},
+
+		"rx" : {
+			"type" : "number",
+			"description" : "incoming packets counter"
+		},
+
+		"tx" : {
+			"type" : "number",
+			"description" : "outgoing packets counter"
+		},
+
+		"linkQuality " : {
+			"type" : "number",
+			"description" : "link quality in percent"
+		}
+	}
+}

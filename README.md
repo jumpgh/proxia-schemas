@@ -44,8 +44,11 @@
 **Список описанных типов данных**
 
 * [device.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/device.json) - описание устройства общего вида (базовый типа для счетчиков и успд)
+  * [action.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/action.json) - действие для устройства
   * [device-data-record.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/device-data-record.json) - данные с устройства
   * [uspd.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/uspd.json) - успд
+     * [uspd-telemetry.json] (https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/uspd-telemetry.json) - телеметрия успд
+     * [gsm-state-data.json] (https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/gsm-state-data.json) - состояние связи по gsm каналу
   * [meter.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/meter.json) - счетчик общего вида (базовый типа для счетчиков)
      * [archive-info.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/archive-info.json) - описание архива счетчика
      * [modbus-register.json](https://sandbox.proxia.ru/jsonschemaviewer/?schema=https://sandbox.proxia.ru/schemas/v02/modbus-register.json) - modbus регистр
