@@ -10,17 +10,17 @@
 
 	"properties": {
 
-		"rssi" : {
-			"type" : "number",
+		"rssi": {
+			"type": "number",
 			"description": "cellular network signal level"
 		},
 		
-		"registration" : {
+		"registration": {
 			"enum": ["unregistered", "registered"],
 			"description": "registration flag in the cellular network"
 		},
 		
-		"connection" : {
+		"connection": {
 			"enum": ["disconnected", "connected"],
 			"description": "connection flag with the server"
 		}
