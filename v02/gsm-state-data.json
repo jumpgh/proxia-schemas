@@ -1,0 +1,29 @@
+{
+
+	"$id": "https://sandbox.proxia.ru/schemas/v02/gsm-state-data.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+
+	"description": "gsm state data",
+	"type": "object",
+	
+	"required": [],
+
+	"properties": {
+
+		"rssi": {
+			"type": "number",
+			"description": "cellular network signal level"
+		},
+		
+		"registration": {
+			"enum": ["unregistered", "registered"],
+			"description": "registration flag in the cellular network"
+		},
+		
+		"connection": {
+			"enum": ["disconnected", "connected"],
+			"description": "connection flag with the server"
+		}
+
+	}
+}
