@@ -68,9 +68,15 @@
 			"description" : "outgoing packets counter"
 		},
 
-		"linkQuality " : {
+		"linkStatus" : {
+			"enum": ["connected","disconnected"],
+			"description": "data word length"
+		},
+
+		"linkQuality" : {
 			"type" : "number",
 			"description" : "link quality in percent"
 		}
+
 	}
 }
