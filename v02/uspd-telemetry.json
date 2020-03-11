@@ -16,7 +16,12 @@
 			"description" : "uptime in seconds"
 		},
 
-		"supplyVoltage" : {
+		"packetID" : {
+			"type" : "number",
+			"description" : "packet identifier"
+		},
+
+		"voltage" : {
 			"type" : "number",
 			"description" : "supply voltage"
 		},
@@ -24,6 +29,16 @@
 		"cpuTemperature" : {
 			"type" : "number",
 			"description" : "cpu temperature"
+		},
+
+		"ambientTemperature" : {
+			"type" : "number",
+			"description" : "ambient temperature"
+		},
+
+		"caseState" : {
+			"type" : "string",
+			"description" : "case state"
 		},
 
 		"gsm" : {
