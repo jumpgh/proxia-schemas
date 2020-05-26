@@ -33,6 +33,11 @@
 		"cosFi" : {
 			"type" : "number",
 			"description" : "power coefficient"
+		},
+              
+		"E" : {
+			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-data.json",
+			"description": "electricity energy"
 		}
 
 	}
