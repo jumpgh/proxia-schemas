@@ -1,0 +1,115 @@
+{
+	"$id": "proxia-unc-telemetry.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "proxia unc telemetry schema",
+	"type": "object",
+    "allOf": [ {"$ref": "#/device-data-record.json" } ],
+	"required": [],
+	"properties": 
+	{
+		"voltage" : {
+			"type" : "number",
+			"description" : "motherboard voltage"
+		},
+        
+        "temperature" : {
+			"type" : "number",
+			"description" : "inside box temperature"
+		},
+        
+        "uptime" : {
+			"type" : "number",
+			"description" : "uptime in seconds"
+		},
+        
+        "sensor" : {
+			"type" : "number",
+			"description" : "access sensor state (0 - closed; 1 - opened; 9 - disbaled; other - unknown)"
+		},
+        
+        "signalLevel" : {
+			"type" : "number",
+			"description" : "signal level (0 - 113 dBm or low; 1- 111 dBm; 3 - 51 dBm or high; 4 - unknown level; 2,5...30 - 109-53 dBm)"
+		},
+        
+        "tcpConnection" : {
+			"type" : "number",
+			"description" : "tcp connection flag (0 - disconnected; 1 - connected)"
+		},
+        
+        "modemStatus" : {
+			"type" : "number",
+			"description" : "modem module event loop state (0 - gprs reloading; 1 - gprs initialization; 2 - in action; 3 - getting ip address; 4 - tcp connection opening; 5 - tcp data transfering; 6 - switch data command; 7 - gprs telemetry receive; 8 - switch command data; )"
+		},
+        
+        "csdStatus" : {
+			"type" : "number",
+			"description" : "csd connection flag (0 - disconnected; 1 - connected)"
+		},
+        
+        "sensorHuman" : {
+			"type" : "string",
+			"description" : "human view for access sensor state"
+		},
+        
+        "signalLevelHuman" : {
+			"type" : "string",
+			"description" : "human view for signal level"
+		},
+        
+        "tcpConnectionHuman" : {
+			"type" : "string",
+			"description" : "human view for tcp connection flag"
+		},
+        
+        "modemStatusHuman" : {
+			"type" : "string",
+			"description" : "human view for modem module event loop state"
+		},
+        
+        "csdStatusHuman" : {
+			"type" : "string",
+			"description" : "human view for csd connection flag"
+		},
+        
+        "voltage1" : {
+			"type" : "number",
+			"description" : "pin 1 voltage (ADC units)"
+		},
+        
+        "voltage2" : {
+			"type" : "number",
+			"description" : "pin 2 voltage (ADC units)"
+		},
+        
+        "voltage3" : {
+			"type" : "number",
+			"description" : "pin 3 voltage (ADC units)"
+		},
+        
+        "voltage4" : {
+			"type" : "number",
+			"description" : "pin 4 voltage (ADC units)"
+		},
+        
+        "tcpBytesSended" : {
+			"type" : "number",
+			"description" : "bytes count sended via tcp"
+		},
+        
+        "tcpBytesReceived" : {
+			"type" : "number",
+			"description" : "bytes count received via tcp"
+		},
+        
+        "gprsBytesSended" : {
+			"type" : "number",
+			"description" : "bytes count sended via gprs"
+		},
+        
+        "gprsBytesReceived" : {
+			"type" : "number",
+			"description" : "bytes count received via gprs"
+		}
+	}
+}
