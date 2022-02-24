@@ -1,5 +1,5 @@
 {
-	"$id": "https://sandbox.proxia.ru/schemas/v02/device.json",
+	"$id": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/device.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "generic device description",
@@ -47,7 +47,7 @@
 		"ports": {
 			"type": "array",
 			"description": "ports available",
-			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/port.json" }
+			"items": { "$ref": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/port.json" }
 		}
 
 	}
