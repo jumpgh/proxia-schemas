@@ -1,5 +1,5 @@
 {
-	"$id": "https://sandbox.proxia.ru/schemas/v02/measurer-channel.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/measurer-channel.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "measurer channel",
@@ -35,7 +35,7 @@
 		},
 
 		"archiveInfo": {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/archive-info.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/archive-info.json",
 			"description": "info about stored archives"
 		}
 	}

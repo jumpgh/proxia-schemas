@@ -1,8 +1,8 @@
 {
-	"$id": "https://sandbox.proxia.ru/schemas/v02/device-config.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/device-config.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/action.json" } ],
+	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/action.json" } ],
 
 	"description": "plain list of device configuration",
 	"type": "object",
@@ -18,7 +18,7 @@
 		"devices": {
 			"type": "array",
 			"description": "devices available",
-			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/device.json" }
+			"items": { "$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/device.json" }
 		}
 	}
 }

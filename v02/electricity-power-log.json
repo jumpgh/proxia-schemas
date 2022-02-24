@@ -1,11 +1,11 @@
 {
 
-	"$id": "https://sandbox.proxia.ru/schemas/v02/electricity-power-log.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-power-log.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "electricity power log",
 	"type": "object",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
+	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/device-data-record.json" } ],
 
 	"required": [],
 
@@ -17,7 +17,7 @@
 		},
 
 		"power" : {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-power-data.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-power-data.json",
 			"description": "power data"
 		}
 

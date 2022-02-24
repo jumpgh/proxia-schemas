@@ -1,5 +1,5 @@
 {
-	"$id": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-data.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-energy-data.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "electricity energy data",

@@ -1,11 +1,11 @@
 {
 
-	"$id": "https://sandbox.proxia.ru/schemas/v02/heat-system-data.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/heat-system-data.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "heat system data",
 	"type": "object",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
+	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/device-data-record.json" } ],
 
 	"required": [],
 
@@ -60,7 +60,7 @@
 		},
 		
 		"events": {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/heat-system-events-duration.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/heat-system-events-duration.json",
 			"description": "heat system events duration"
 		}
 

@@ -1,11 +1,11 @@
 
 {
-	"$id": "https://sandbox.proxia.ru/schemas/v02/extension-module.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/extension-module.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "extension module metadata uspd >> extension module >> meter",
 	"type": "object",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device.json" } ],
+	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/device.json" } ],
 
 	"required": [],
 
@@ -25,7 +25,7 @@
 			"type": "array",
 			"description": "connected meters",
 			"items": {
-				"$ref": "https://sandbox.proxia.ru/schemas/v02/meter.json"
+				"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/meter.json"
 			}
 		}
 

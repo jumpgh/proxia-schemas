@@ -1,6 +1,6 @@
 {
 
-	"$id": "https://sandbox.proxia.ru/schemas/v02/heat-system.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/heat-system.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "heat system description",
@@ -27,7 +27,7 @@
 		},
 
 		"archiveInfo": {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/archive-info.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/archive-info.json",
 			"description": "info about stored archives"
 		}
 	}

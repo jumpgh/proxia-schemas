@@ -1,11 +1,11 @@
 {
 
-	"$id": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-log.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-energy-log.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "electricity energy log",
 	"type": "object",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
+	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/device-data-record.json" } ],
 
 	"required": [],
 
@@ -27,17 +27,17 @@
 		},
 		
 		"sE" : {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-data.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-energy-data.json",
 			"description": "interval start electricity energy"
 		},
 		
 		"dE" : {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-data.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-energy-data.json",
 			"description": "difference electricity energy"
 		},
 		
 		"eE" : {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-energy-data.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-energy-data.json",
 			"description": "interval end electricity energy"
 		},
 		

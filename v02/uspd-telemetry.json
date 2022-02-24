@@ -1,11 +1,11 @@
 {
 
-	"$id": "https://sandbox.proxia.ru/schemas/v02/uspd-telemetry.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/uspd-telemetry.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "device telemetry",
 	"type": "object",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
+	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/device-data-record.json" } ],
 
 	"required": [],
 
@@ -42,7 +42,7 @@
 		},
 
 		"gsm" : {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/gsm-state-data.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/gsm-state-data.json",
 			"description": "gsm state"
 		},
 

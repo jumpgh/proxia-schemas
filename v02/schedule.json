@@ -1,5 +1,5 @@
 {
-	"$id": "https://sandbox.proxia.ru/schemas/v02/schedule.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/schedule.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "poll job schedule. Тут надо подумать, что потребуется: интервалы/окна опроса, периоды",
@@ -14,7 +14,7 @@
 		"enabled": { "type":"boolean" },
 		
 		"user": {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/schedule-user-data.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/schedule-user-data.json",
 			"description": "schedule user data"
 		},
 

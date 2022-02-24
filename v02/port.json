@@ -1,6 +1,6 @@
 {
 
-	"$id": "https://sandbox.proxia.ru/schemas/v02/port.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/port.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "generic port setting",

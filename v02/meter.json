@@ -1,11 +1,11 @@
 {
 
-	"$id": "https://sandbox.proxia.ru/schemas/v02/meter.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/meter.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "abstract meter",
 	"type": "object",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device.json" } ],
+	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/device.json" } ],
 
 	"required": [ "type", "outputType" ],
 
@@ -45,17 +45,17 @@
 		"schedule": {
 			"type": "array",
 			"description": "poll schedule",
-			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/schedule.json" }
+			"items": { "$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/schedule.json" }
 		},
 
 		"registers": {
 			"type": "array",
 			"description": "modbus registers",
-			"items": { "$ref": "https://sandbox.proxia.ru/schemas/v02/modbus-register.json" }
+			"items": { "$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/modbus-register.json" }
 		},
 
 		"archiveInfo": {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/archive-info.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/archive-info.json",
 			"description": "info about stored archives"
 		}
 	}

@@ -1,11 +1,11 @@
 {
 
-	"$id": "https://sandbox.proxia.ru/schemas/v02/pulse-meter.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/pulse-meter.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "pulse meter",
 	"type": "object",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/meter.json" } ],
+	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/meter.json" } ],
 
 	"required": [ ],
 

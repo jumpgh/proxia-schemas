@@ -1,22 +1,22 @@
 {
-	"$id": "https://sandbox.proxia.ru/schemas/v02/electricity-max-power-log.json",
+	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-max-power-log.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "electricity maximium power log",
 	"type": "object",
-	"allOf": [ {"$ref": "https://sandbox.proxia.ru/schemas/v02/device-data-record.json" } ],
+	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/device-data-record.json" } ],
 
 	"required": [],
 
 	"properties": {
 	
 		"morningPower" : {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-power-data.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-power-data.json",
 			"description": "max morning power data"
 		},
 		
 		"eveningPower" : {
-			"$ref": "https://sandbox.proxia.ru/schemas/v02/electricity-power-data.json",
+			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-power-data.json",
 			"description": "max evening power data"
 		}
 
