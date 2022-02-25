@@ -1,11 +1,11 @@
 {
 
-	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/heat-meter.json",
+	"$id": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/heat-meter.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "heat meter",
 	"type": "object",
-	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/meter.json" } ],
+	"allOf": [ {"$ref": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/meter.json" } ],
 
 	"required": [],
 
@@ -13,7 +13,7 @@
 
 		"systems": {
 			"type": "array",
-			"items": { "$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/heat-system.json" }
+			"items": { "$ref": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/heat-system.json" }
 		}
 
 	}

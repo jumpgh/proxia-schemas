@@ -1,12 +1,12 @@
 {
 
-	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/pulse-port.json",
+	"$id": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/pulse-port.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "pulse port setting",
 	"type": "object",
 
-	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/port.json" } ],
+	"allOf": [ {"$ref": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/port.json" } ],
 
 	"required": [  ],
 

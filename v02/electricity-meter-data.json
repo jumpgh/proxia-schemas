@@ -1,11 +1,11 @@
 {
 
-	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-meter-data.json",
+	"$id": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/electricity-meter-data.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "electricity meter data",
 	"type": "object",
-	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/device-data-record.json" } ],
+	"allOf": [ {"$ref": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/device-data-record.json" } ],
 
 	"required": [],
 
@@ -17,7 +17,7 @@
 		},
 		
 		"E" : {
-			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-energy-data.json",
+			"$ref": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/electricity-energy-data.json",
 			"description": "electricity energy"
 		},
 
@@ -32,17 +32,17 @@
 		},
 
 		"phaseA" : {
-			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-phase-data.json",
+			"$ref": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/electricity-phase-data.json",
 			"description": "phase A data"
 		},
 		
 		"phaseB" : {
-			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-phase-data.json",
+			"$ref": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/electricity-phase-data.json",
 			"description": "phase B data"
 		},
 		
 		"phaseC" : {
-			"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/electricity-phase-data.json",
+			"$ref": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/electricity-phase-data.json",
 			"description": "phase С data"
 		},
 		

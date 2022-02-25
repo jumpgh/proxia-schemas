@@ -1,10 +1,10 @@
 {
-	"$id": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/action.json",
+	"$id": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/action.json",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 
 	"description": "any action",
 	"type": "object",
-	"allOf": [ {"$ref": "https://github.com/jumpgh/proxia-schemas/blob/master/v02/action.json" } ],
+	"allOf": [ {"$ref": "https://raw.githubusercontent.com/jumpgh/proxia-schemas/master/v02/action.json" } ],
 
 	"properties": {
 
